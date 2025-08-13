@@ -97,7 +97,7 @@ python train_fulltext.py
 
 # Run inference
 python inference.py
-'''bash
+```
 
 ## 📚 References  
 
