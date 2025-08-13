@@ -97,3 +97,11 @@ python train_fulltext.py
 
 # Run inference
 python inference.py
+
+## 📚 References  
+
+1. [QASPER Dataset](https://huggingface.co/datasets/allenai/qasper)  
+2. [Qwen2.5-0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B)  
+3. [LoRA: Efficient Fine-tuning of Quantized LLMs](https://arxiv.org/abs/2305.14314)  
+
+
