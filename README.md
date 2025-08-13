@@ -2,9 +2,9 @@
 **Fine-tuning Qwen2.5-0.5B on Question-Answer Pairs vs. Full-Text Context**  
 
 ## 📌 Overview  
-This project investigates how two different fine-tuning strategies affect the question-answering capabilities of small language models (LLMs) in the context of scientific research papers. We use **Qwen2.5-0.5B**, a compact open-source LLM, and **LoRA (Low-Rank Adaptation)** for parameter-efficient fine-tuning.  
+This project investigates how two different fine-tuning strategies affect the question-answering capabilities of small language models (LLMs) in the context of scientific research papers. The work uses **Qwen2.5-0.5B**, a compact open-source LLM, and **LoRA (Low-Rank Adaptation)** for parameter-efficient fine-tuning.  
 
-We compare:  
+Two approaches are compared:  
 1. **QA Pair Fine-Tuning** – Model trained on abstract + gold answer pairs.  
 2. **Full-Text Fine-Tuning** – Model trained with the entire research paper as context.  
 
@@ -13,7 +13,7 @@ Evaluation is performed using **DeepSeek-R1**, a larger reasoning model, as an e
 ---
 
 ## 🗂 Dataset  
-We use the **[QASPER](https://huggingface.co/datasets/allenai/qasper)** dataset — a high-quality QA dataset focused on NLP research papers.  
+The **[QASPER](https://huggingface.co/datasets/allenai/qasper)** dataset — a high-quality QA dataset focused on NLP research papers — is used.  
 - **QA Pairs:** Abstract + question → gold answer (+ evidence if available)  
 - **Full-Text:** Entire paper content merged into a single text block  
 
@@ -97,6 +97,7 @@ python train_fulltext.py
 
 # Run inference
 python inference.py
+
 ```
 
 ## 📚 References  
